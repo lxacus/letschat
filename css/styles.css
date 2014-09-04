@@ -1,0 +1,279 @@
+@font-face {
+  font-family: icon;
+  src: url('fonts/nav.eot?-6bgu0g');
+  src: url('fonts/nav.eot?#iefix-6bgu0g') format('embedded-opentype'), url('fonts/nav.woff?-6bgu0g') format('woff'), url('fonts/nav.ttf?-6bgu0g') format('truetype'), url('fonts/nav.svg?-6bgu0g#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[icon-gear]:before {
+  font-family: 'navi';
+  content: attr(e600);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.15);
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.icon,
+textarea {
+  font-family: helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  margin: 0;
+  padding: 0;
+}
+h4 {
+  text-align: center;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.icon {
+  font-family: icon;
+  font-size: 30px;
+  color: white;
+}
+.radial-grad {
+  position: fixed;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 50%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffffff), color-stop(50%, #ffffff), color-stop(100%, rgba(255, 255, 255, 0)));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 50%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 50%, rgba(255, 255, 255, 0) 100%);
+  /* Opera 12+ */
+
+  background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 50%, rgba(255, 255, 255, 0) 100%);
+  /* IE10+ */
+
+  background: radial-gradient(ellipse at center, #ffffff 0%, #ffffff 50%, rgba(255, 255, 255, 0) 100%);
+  /* W3C */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+
+}
+#main-con {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+}
+#main-con #dialog-con {
+  height: 230px;
+  padding: 5%;
+  width: 90%;
+  overflow-x: hidden;
+}
+#main-con #dialog-con #instruction {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.4);
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+#main-con #dialog-con p {
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.7);
+  max-width: 100%;
+  word-wrap: break-word;
+}
+#letter-con {
+  position: absolute;
+  width: 100%;
+  bottom: 75px;
+}
+#letter-con .group {
+  margin: 10px 0;
+  width: 100%;
+}
+#letter-con .icon {
+  font-family: "helvetica", sans-serif;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border: 1px solid #007283;
+  border-radius: 12px;
+  margin: 0 3px;
+  background: #007283;
+}
+#letter-con .icon.vowel {
+  background: none;
+  color: #007283;
+  border: solid 1px #007283;
+}
+#nav-circles {
+  width: 80px;
+  position: absolute;
+  width: 78px;
+  margin-left: -39px;
+  left: 50%;
+  bottom: 64px;
+}
+#nav-circles div {
+  border: 1px solid #007283;
+  background-color: #007283;
+  width: 5px;
+  height: 5px;
+  float: left;
+  margin: 0 3px;
+  border-radius: 5px;
+  opacity: .3;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+#nav-circles div.selected {
+  opacity: 1;
+}
+#nav-con {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.2);
+}
+#nav-con .group {
+  width: 80%;
+  position: relative;
+  margin: 10px auto;
+}
+#nav-con .icon {
+  width: 40px;
+}
+#nav-con #backspace {
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+#nav-con #next {
+  position: absolute;
+  right: 0;
+  top: 2px;
+}
+#nav-con #show-instructions {
+  font-family: "helvetica", sans-serif;
+  width: 100px;
+  color: white;
+  border-radius: 3px;
+}
+#nav-con #show-instructions p {
+  font-size: 16px;
+  line-height: 30px;
+  color: white;
+}
+#backspace,
+#show-instructions,
+#next {
+  color: white;
+  height: 30px;
+  font-size: 24px;
+}
+#show-instructions.showing {
+  color: rgba(0, 0, 0, 0.4);
+}
+#instructions {
+  background-color: #007283;
+  font-family: "helvetica", sans-serif;
+  color: white;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: top 0.25s ease-in-out;
+  -moz-transition: top 0.25s ease-in-out;
+  -ms-transition: top 0.25s ease-in-out;
+  transition: top 0.25s ease-in-out;
+  z-index: 100;
+}
+#instructions.cleared {
+  top: -150%;
+}
+#instructions #logo {
+  background: white;
+  color: #007283;
+  font-size: 25px;
+  width: 150px;
+  height: 40px;
+  line-height: 42px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+#instructions #introduction {
+  margin: 20px auto;
+  position: relative;
+  width: 90%;
+  text-align: left;
+  font-size: 18px;
+}
+#instructions #step-con {
+  margin: 20px auto;
+  position: relative;
+  width: 90%;
+}
+#instructions #step-con .step {
+  height: 50px;
+}
+#instructions #step-con .step .step-head {
+  float: left;
+  border-right: 1px solid white;
+  padding: 5px 10px 5px 0px;
+}
+#instructions #step-con .step .step-head p {
+  text-align: left;
+  font-size: 15px;
+}
+#instructions #step-con .step p {
+  text-align: left;
+}
+#instructions #step-con .step #description {
+  font-size: 15px;
+  padding: 5px 0 0 0;
+  margin: 0 0 0 68px;
+}
+#dismiss-instructions {
+  border: solid white 1px;
+  padding: 10px;
+  position: relative;
+  width: 100px;
+  border-radius: 5px;
+}
+#before-cursor {
+  border-right: solid 1px rgba(0, 0, 0, 0.5);
+}
+#before-cursor.blinking {
+  border-right: solid 1px rgba(0, 0, 0, 0);
+}
+.invisible {
+  opacity: 0;
+}
+#letters-inner {
+  -webkit-transition: opacity 0.15s ease-in-out;
+  -moz-transition: opacity 0.15s ease-in-out;
+  -ms-transition: opacity 0.15s ease-in-out;
+  transition: opacity 0.15s ease-in-out;
+}

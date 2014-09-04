@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Let's Chat!</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+		 <!-- icons for fancy save to homescreen -->
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="css/images/apple-icon-57x57.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="css/images/apple-icon-72x72.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="css/images/apple-icon-114x114.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="css/images/apple-icon-144x144.png" />
+
+		<link rel="shortcut icon" href="favicon.ico" type="image/ico"/>
+		<!-- <link rel="icon" sizes="196x196" href="droid-icon-196x196.png"> -->
+
+		<!-- make this thing mobile -->
+		<meta name="HandheldFriendly" content="True">
+  		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	</head>
+
+	<body>
+		<div class="radial-grad" id=""></div>
+		<div id="instructions" class="">
+			<center>
+				<div id="logo">Let’s Chat!</div>
+				<div id="introduction"><p>This app was created to assist verbal communication. Follow the instructions below to gain an understanding of how the system works.</p></div>
+				<div id="step-con">
+					<div class="step" id="step1">
+						<div class="step-head"><p><b>Step 1</b></p></div>
+						<p id="description">I will speak a word and you will say it back to me.</p>
+					</div>
+					<div class="step" id="step2">
+						<div class="step-head"><p><b>Step 2</b></p></div>
+						<p id="description">If you can't understand the word, ask me to spell it.</p>
+					</div>
+					<div class="step" id="step3">
+						<div class="step-head"><p><b>Step 3</b></p></div>
+						<p id="description">If you can't understand each letter, continue.</p>
+					</div>
+				</div>
+				<div id="dismiss-instructions"><p>continue</p></div>
+			</center>
+		</div>
+		<div id="main-con">
+			<div id="dialog-con">
+				<p id="instruction">Start by asking me if the letter is a vowel. If it isn't, tap the right arrow to ask me the next group of consonants until I nod yes. Then, tap that character.</p>
+				<p id="message-in-progress"><span id="before-cursor"></span><span id="after-cursor"></span></p>
+			</div>
+		</div>
+		<div id="nav-circles">
+				<div id="one" class="selected"></div>
+				<div id="two"></div>
+				<div id="three"></div>
+				<div id="four"></div>
+				<div id="five"></div>
+				<div id="six"></div>
+			</div>
+		<div id="letter-con">
+			<center class="group">
+				<div id="letters-inner">		 						<!--filled by the js function, setLetters();-->
+				</div> 
+			</center>
+		</div>
+		<div id="nav-con">
+			<center class="group">
+				<!-- <div class="icon character" id="space">i</div> -->
+				<div class="icon" id="backspace">7</div>
+				<div class="icon showing" id="show-instructions"><p>next word</p></div>
+				<div class="icon" id="next" id="no">2</div>
+			</center>
+		</div>
+	</body>
+
+	<script src="//code.jquery.com/jquery-1.11.1.js"></script>
+<!--	<script> window.jquery ||  document.write('<script src="js/lib/jquery.min.js"><\/script>');</script> -->
+	<script src="script.js"></script>
+
+
+</html>
